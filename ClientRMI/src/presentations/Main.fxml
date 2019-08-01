@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="panPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="920.0" style="-fx-background-color: #a52a2a;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="presentations.DataCenterFXMLController">
+   <children>
+      <Pane layoutY="112.0" prefHeight="407.0" prefWidth="920.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Pane layoutX="33.0" layoutY="77.0" prefHeight="163.0" prefWidth="202.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15; -fx-border-color: #a52a2a; -fx-border-radius: 15;">
+               <children>
+                  <ImageView fx:id="admin_home" fitHeight="150.0" fitWidth="150.0" layoutX="32.0" layoutY="7.0" onMouseClicked="#adminSeeting" onMouseEntered="#animeAdmin" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icone/icone_admin.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="326.0" layoutY="77.0" prefHeight="163.0" prefWidth="202.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15; -fx-border-radius: 15; -fx-border-color: #a52a2a;">
+               <children>
+                  <ImageView fx:id="server_home" fitHeight="121.0" fitWidth="182.0" layoutX="41.0" layoutY="14.0" onMouseClicked="#serverSetting" onMouseEntered="#serverAnime" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icone/server.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Pane layoutX="611.0" layoutY="77.0" prefHeight="163.0" prefWidth="202.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15; -fx-border-color: #a52a2a; -fx-border-radius: 15;">
+               <children>
+                  <ImageView fx:id="salle_home" fitHeight="135.0" fitWidth="150.0" layoutX="37.0" layoutY="14.0" onMouseClicked="#roomSeeting" onMouseEntered="#salleAnime" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@icone/blue-home.png" />
+                     </image>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="33.0" layoutY="251.0" prefHeight="38.0" prefWidth="202.0" text="ADMIN SETTING" textFill="#4a2626">
+               <font>
+                  <Font name="Serif Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="251.0" prefHeight="38.0" prefWidth="215.0" text="SERVER SETTING" textFill="#4a2626">
+               <font>
+                  <Font name="Serif Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="614.0" layoutY="251.0" prefHeight="38.0" prefWidth="196.0" text="ROOM SETTING" textFill="#4a2626">
+               <font>
+                  <Font name="Serif Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="642.0" layoutY="25.0" prefHeight="79.0" prefWidth="278.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15;">
+         <children>
+            <Pane layoutX="137.0" layoutY="6.0" prefHeight="68.0" prefWidth="135.0" style="-fx-background-color: #a52a2a; -fx-background-radius: 15;">
+               <children>
+                  <Label fx:id="label_hours" alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" prefHeight="38.0" prefWidth="117.0" text="19:05:00" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label_date" alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="34.0" prefHeight="28.0" prefWidth="117.0" text="12-07-2019" textFill="#fffbfb">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutY="21.0" prefHeight="38.0" prefWidth="129.0" text="WELCOME" textFill="#4a2626">
+               <font>
+                  <Font name="Serif Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Label layoutX="14.0" layoutY="31.0" prefHeight="68.0" prefWidth="625.0" text="GESTION DU PARC INFORMATIQUE DE L'ESP" textFill="#fffafa">
+         <font>
+            <Font name="Arial Narrow Bold" size="28.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

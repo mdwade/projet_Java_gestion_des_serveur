@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="panPrincipal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="920.0" style="-fx-background-color: #a52a2a;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="presentations.PanAdminController">
+   <children>
+      <Pane layoutX="679.0" layoutY="117.0" prefHeight="313.0" prefWidth="239.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Pane layoutX="16.0" layoutY="16.0" prefHeight="285.0" prefWidth="207.0" style="-fx-background-color: #a52a2a; -fx-background-radius: 15;">
+               <children>
+                  <JFXTextField fx:id="text_pseudo" alignment="CENTER" focusColor="LAVENDER" labelFloat="true" layoutX="30.0" layoutY="70.0" prefHeight="37.0" prefWidth="139.0" promptText="Pseudo" style="-fx-background-color: ffffff;" unFocusColor="#fffbfb">
+                     <font>
+                        <Font name="Serif Italic" size="10.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="text_nom" alignment="CENTER" focusColor="LAVENDER" labelFloat="true" layoutX="30.0" layoutY="133.0" prefHeight="37.0" prefWidth="139.0" promptText="Nom " style="-fx-background-color: ffffff;" unFocusColor="#fffbfb">
+                     <font>
+                        <Font name="Serif Italic" size="10.0" />
+                     </font>
+                  </JFXTextField>
+                  <JFXTextField fx:id="text_prenom" alignment="CENTER" focusColor="LAVENDER" labelFloat="true" layoutX="30.0" layoutY="201.0" prefHeight="37.0" prefWidth="139.0" promptText="Prénom" style="-fx-background-color: ffffff;" unFocusColor="#fffbfb">
+                     <font>
+                        <Font name="Serif Italic" size="10.0" />
+                     </font>
+                  </JFXTextField>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="19.0" layoutY="7.0" prefHeight="47.0" prefWidth="169.0" text="NEW ADMIN" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Bold" size="25.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="679.0" layoutY="427.0" prefHeight="85.0" prefWidth="239.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Pane layoutX="21.0" layoutY="8.0" prefHeight="62.0" prefWidth="207.0" style="-fx-background-color: #a52a2a; -fx-background-radius: 15;">
+               <children>
+                  <JFXButton alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="8.0" onAction="#enregistrer" prefHeight="47.0" prefWidth="185.0" style="-fx-background-radius: 30; -fx-background-color: #fffff;" text="AJOUTER" textFill="WHITE">
+                     <font>
+                        <Font name="AdobeHebrew-Bold" size="24.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+      <Pane layoutX="679.0" layoutY="30.0" prefHeight="79.0" prefWidth="239.0" style="-fx-background-color: #ffffff; -fx-background-radius: 15;">
+         <children>
+            <Pane layoutX="95.0" layoutY="6.0" prefHeight="68.0" prefWidth="135.0" style="-fx-background-color: #a52a2a; -fx-background-radius: 15;">
+               <children>
+                  <Label fx:id="label_hours" alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" prefHeight="38.0" prefWidth="120.0" text="19:05:00" textFill="WHITE">
+                     <font>
+                        <Font name="Arial Black" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label_date" alignment="CENTER" contentDisplay="CENTER" layoutX="9.0" layoutY="34.0" prefHeight="28.0" prefWidth="117.0" text="12-07-2019" textFill="#fffbfb">
+                     <font>
+                        <Font name="Arial Bold" size="16.0" />
+                     </font>
+                  </Label>
+               </children></Pane>
+            <ImageView fitHeight="68.0" fitWidth="95.0" layoutX="8.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@icone/icone_admin.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <Label layoutX="82.0" layoutY="36.0" prefHeight="68.0" prefWidth="556.0" text="GESTION DU PARC INFORMATIQUE DE L'ESP" textFill="#fffafa">
+         <font>
+            <Font name="Arial Narrow Bold" size="30.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="admin_home" fitHeight="47.0" fitWidth="53.0" focusTraversable="true" layoutX="14.0" layoutY="147.0" onMouseClicked="#adminHome" onMouseEntered="#animeAdmin" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icone/employee%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="server_home" fitHeight="38.0" fitWidth="47.0" layoutX="18.0" layoutY="236.0" onMouseClicked="#serverHome" onMouseEntered="#serverAnime" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icone/server%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="salle_home" fitHeight="47.0" fitWidth="68.0" layoutX="14.0" layoutY="314.0" onMouseClicked="#salleHome" onMouseEntered="#salleAnime" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@icone/house-outline%20(1).png" />
+         </image>
+      </ImageView>
+      <Label layoutX="10.0" layoutY="106.0" prefHeight="17.0" prefWidth="68.0" text="MENU" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Pane layoutX="82.0" layoutY="117.0" prefHeight="395.0" prefWidth="593.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <TableView fx:id="listeAdmin" layoutX="1.0" prefHeight="395.0" prefWidth="593.0">
+              <columns>
+                <TableColumn fx:id="pseudo" prefWidth="110.0" text="Pseudo" />
+                <TableColumn fx:id="nom" prefWidth="215.0" text="NOMS" />
+                  <TableColumn fx:id="prenom" prefWidth="175.0" text="PRENOMS" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </Pane>
+      <Label layoutX="15.0" layoutY="198.0" prefHeight="18.0" prefWidth="53.0" text="Admin" textFill="#fff3f3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="276.0" prefHeight="18.0" prefWidth="53.0" text="Server" textFill="#fff3f3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="15.0" layoutY="374.0" prefHeight="17.0" prefWidth="47.0" text="Home" textFill="#fff3f3">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Separator layoutX="8.0" layoutY="221.0" prefHeight="0.0" prefWidth="62.0" style="-fx-background-color: #ffffff;" />
+      <Separator layoutX="6.0" layoutY="298.0" prefHeight="0.0" prefWidth="62.0" style="-fx-background-color: #ffffff;" />
+      <Separator layoutX="6.0" layoutY="397.0" prefHeight="0.0" prefWidth="62.0" style="-fx-background-color: #ffffff;" />
+   </children>
+</Pane>
